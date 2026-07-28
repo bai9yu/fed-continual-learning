@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Environments
+.venv/
+venv/
+env/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+
+# Large experiment artifacts and datasets
+data/
+ckpt/
+pre/
+runs/
+outputs/
+*.pth
+*.pt
+*.ckpt
+*.mat
+*.tar.gz
+*.zip
+
+# Papers / local notes not intended for public distribution
+*.pdf
+*.doc
+*.docx
+*.ppt
+*.pptx

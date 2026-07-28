@@ -1,0 +1,19 @@
+# PyTorch CUDA 11.8 需单独安装（覆盖 pip 全局镜像）：
+#   pip install torch==2.0.1+cu118 torchvision==0.15.2+cu118 torchaudio==2.0.2+cu118 --index-url https://download.pytorch.org/whl/cu118
+# 然后安装其余依赖：
+#   pip install -r requirements.txt
+
+torch==2.0.1+cu118
+torchvision==0.15.2+cu118
+torchaudio==2.0.2+cu118
+
+# 核心依赖
+numpy==1.24.1
+matplotlib==3.4.3
+Pillow==8.2.0
+scipy==1.13.1
+
+# 可选（绘图/分析）
+seaborn==0.13.2
+pandas==2.2.3
+scikit-learn==0.24.2
