@@ -1,10 +1,5 @@
 # 联邦持续半监督学习（FixMatch + 客户端调度）
 
-> Public portfolio version. This repository keeps the runnable source code,
-> dependency notes, selected result figures, and the s42 experiment outputs.
-> Large datasets, checkpoints, virtual environments, and local paper/reference
-> files are intentionally excluded from Git history.
-
 基于 FixMatch 的联邦半监督实验框架，支持多种客户端调度策略与持续学习式阶段（预热 → 联邦）。
 
 ## 项目亮点
