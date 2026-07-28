@@ -36,9 +36,7 @@
 | 图表 | 说明 |
 |------|------|
 | `results/comparison_frame1_r8000_t0.8.png` | 多策略整体性能对比 |
-| `results/summary_bar_frame1_r8000_t0.8.png` | 汇总柱状图 |
 | `results/comparison_rounds_to_target_frame1_r8000_t0.8.png` | 达到目标精度所需轮次对比 |
-| `results/avg_clients_per_round_frame1_r8000_t0.8.png` | 每轮平均客户端参与量 |
 
 ## 依赖
 
