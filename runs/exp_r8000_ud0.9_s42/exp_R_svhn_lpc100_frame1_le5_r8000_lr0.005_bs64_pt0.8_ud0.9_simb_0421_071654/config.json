@@ -1,0 +1,205 @@
+{
+  "num_clients": 30,
+  "clients_per_round": 10,
+  "model_name": "cnn",
+  "dataset_name": "svhn",
+  "labeled_per_class": 100,
+  "alpha": 0.5,
+  "batch_size": 64,
+  "num_workers": 0,
+  "continual_old_num_classes": 6,
+  "frame1_initial_num_classes": 6,
+  "frame1_new_num_classes": 4,
+  "frame2_new_num_classes": 0,
+  "frame1_federated_rounds": 8000,
+  "frame2_federated_rounds": 2000,
+  "manual_allocation_frame1": {
+    "0": {
+      "0": 200,
+      "1": 600
+    },
+    "1": {
+      "0": 200,
+      "3": 600
+    },
+    "2": {
+      "0": 200,
+      "5": 600
+    },
+    "3": {
+      "2": 200,
+      "1": 600
+    },
+    "4": {
+      "2": 200,
+      "3": 600
+    },
+    "5": {
+      "2": 200,
+      "5": 600
+    },
+    "6": {
+      "4": 200,
+      "1": 600
+    },
+    "7": {
+      "4": 200,
+      "3": 600
+    },
+    "8": {
+      "4": 200,
+      "5": 600
+    },
+    "9": {
+      "2": 200,
+      "1": 600
+    },
+    "10": {
+      "4": 200,
+      "5": 600
+    },
+    "11": {
+      "0": 200,
+      "5": 600
+    },
+    "12": {
+      "0": 200,
+      "3": 600
+    },
+    "13": {
+      "4": 200,
+      "1": 600
+    },
+    "14": {
+      "4": 200,
+      "3": 600
+    },
+    "15": {
+      "2": 200,
+      "5": 600
+    },
+    "16": {
+      "2": 200,
+      "3": 600
+    },
+    "17": {
+      "0": 200,
+      "1": 600
+    },
+    "18": {
+      "0": 250,
+      "7": 550
+    },
+    "19": {
+      "1": 300,
+      "8": 500
+    },
+    "20": {
+      "2": 400,
+      "9": 400
+    },
+    "21": {
+      "3": 350,
+      "6": 450
+    },
+    "22": {
+      "4": 200,
+      "7": 600
+    },
+    "23": {
+      "5": 450,
+      "8": 350
+    },
+    "24": {
+      "0": 200,
+      "6": 250,
+      "9": 350
+    },
+    "25": {
+      "1": 220,
+      "7": 280,
+      "8": 300
+    },
+    "26": {
+      "2": 300,
+      "6": 200,
+      "7": 300
+    },
+    "27": {
+      "3": 150,
+      "8": 400,
+      "9": 250
+    },
+    "28": {
+      "4": 280,
+      "6": 320,
+      "9": 200
+    },
+    "29": {
+      "5": 200,
+      "7": 400,
+      "8": 200
+    }
+  },
+  "continual_new_class_client_ids": [
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "local_epochs_unlabeled": 5,
+  "finetune_epochs": 5,
+  "lr_unlabeled": 0.005,
+  "momentum": 0.9,
+  "weight_decay": 0.005,
+  "server_batch_size": 32,
+  "pseudo_threshold": 0.8,
+  "pseudo_threshold_old": 0.95,
+  "pseudo_threshold_new_initial": 0.5,
+  "pseudo_threshold_new_final": 0.8,
+  "pseudo_threshold_new_ramp_start_round": 0,
+  "pseudo_threshold_new_ramp_end_round": 8000,
+  "pseudo_sticky_threshold": 0.8,
+  "curriculum_new_client_fraction_start": 0.2,
+  "curriculum_new_client_fraction_end": 0.8,
+  "curriculum_new_client_round_start": 0,
+  "curriculum_new_client_round_end": 8000,
+  "num_runs": 1,
+  "server_init_pre_warmup_rounds": 800,
+  "server_init_pre_warmup_local_epochs": 5,
+  "server_init_pre_warmup_model_path": "pre/serverinit/serverinit_warmup_svhn_kold6_r800_e5_lr0.01_bs32_lpc100_mom0.9_cnn_s42.pth",
+  "frame1_pre_warmup_rounds": 100,
+  "frame1_pre_warmup_local_epochs": 5,
+  "frame1_pre_warmup_model_path": "pre/frame1pre/frame1pre_k2_warmup_svhn_k210_r100_e5_lr0.01_bs32_lpc100_mom0.9_cnn_s42.pth",
+  "continual_run_stage": "frame1",
+  "frame1_freeze_old_logits": false,
+  "total_bandwidth_mhz": 20.0,
+  "tx_power_dbm": 23.0,
+  "upload_deadline": 0.9,
+  "cell_radius": 250.0,
+  "comp_delay_a_i": 0.0005,
+  "comp_delay_mu_i": 2000.0,
+  "seed": 42,
+  "use_wireless_scheduling": true,
+  "server_labeled_per_class": {
+    "0": 1000,
+    "1": 1000,
+    "2": 1000,
+    "3": 1000,
+    "4": 1000,
+    "5": 1000,
+    "6": 100,
+    "7": 100,
+    "8": 100,
+    "9": 100
+  },
+  "experiment_label": "R"
+}

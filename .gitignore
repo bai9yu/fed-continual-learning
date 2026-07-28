@@ -20,7 +20,6 @@ env/
 data/
 ckpt/
 pre/
-runs/
 outputs/
 *.pth
 *.pt
@@ -29,8 +28,16 @@ outputs/
 *.tar.gz
 *.zip
 
+# Keep only selected s42 experiment results in Git.
+runs/*
+!runs/exp_r8000_ud0.9_s42/
+!runs/exp_r8000_ud0.9_s42/**
+!runs/exp_r8000_ud1.0_s42/
+!runs/exp_r8000_ud1.0_s42/**
+
 # Papers / local notes not intended for public distribution
 *.pdf
+!runs/**/*.pdf
 *.doc
 *.docx
 *.ppt

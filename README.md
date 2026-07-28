@@ -1,9 +1,9 @@
 # 联邦持续半监督学习（FixMatch + 客户端调度）
 
 > Public portfolio version. This repository keeps the runnable source code,
-> dependency notes, and selected result figures. Large datasets, checkpoints,
-> full training logs, virtual environments, and local paper/reference files are
-> intentionally excluded from Git history.
+> dependency notes, selected result figures, and the s42 experiment outputs.
+> Large datasets, checkpoints, virtual environments, and local paper/reference
+> files are intentionally excluded from Git history.
 
 基于 FixMatch 的联邦半监督实验框架，支持多种客户端调度策略与持续学习式阶段（预热 → 联邦）。
 
@@ -28,6 +28,8 @@
 | `scheduler.py` | 客户端选择与调度 |
 | `visualization.py` / `plot_from_json.py` | 结果绘图 |
 | `results/` | 精简后的代表性结果图，供仓库首页和作品集引用 |
+| `runs/exp_r8000_ud0.9_s42/` | `user_drop=0.9`、seed 42 的完整实验结果 |
+| `runs/exp_r8000_ud1.0_s42/` | `user_drop=1.0`、seed 42 的完整实验结果 |
 
 ## 代表性结果
 
@@ -90,7 +92,7 @@ runs/
 
 （目录名以 `main.create_exp_dir` 为准。）
 
-> `runs/`、`data/`、`ckpt/`、`pre/` 目录体积较大，未纳入公开仓库。复现实验时请按代码配置自行下载数据集并生成预训练/实验输出。
+> 仓库已纳入 `runs/exp_r8000_ud0.9_s42/` 与 `runs/exp_r8000_ud1.0_s42/` 两组 seed 42 实验结果。其它 `runs/` 结果、`data/`、`ckpt/`、`pre/` 目录体积较大，未纳入公开仓库。复现实验时请按代码配置自行下载数据集并生成预训练/实验输出。
 
 ## 从已有结果重绘
 
