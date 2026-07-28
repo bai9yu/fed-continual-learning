@@ -1,4 +1,4 @@
-# 联邦半监督学习（FixMatch + 客户端调度）
+# 联邦持续半监督学习（FixMatch + 客户端调度）
 
 > Public portfolio version. This repository keeps the runnable source code,
 > dependency notes, and selected result figures. Large datasets, checkpoints,
